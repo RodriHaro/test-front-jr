@@ -15,15 +15,15 @@ a, button {
 }
 
 .btn-primary {
-  background-color: #00b5cc;
+  background-color: #006575;
   color: #ffffff;
-  box-shadow: 0 4px 15px rgba(0, 181, 204, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 101, 117, 0.5);
 }
 
 .btn-primary:hover:not(:disabled) {
-  background-color: #008fa3;
+  background-color: #004d5c;
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 6px 25px rgba(0, 181, 204, 0.7);
+  box-shadow: 0 6px 25px rgba(0, 101, 117, 0.7);
 }
 
 .btn-primary:focus-visible {
