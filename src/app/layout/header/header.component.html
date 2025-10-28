@@ -1,1 +1,9 @@
-<p>header works!</p>
+<header class="header" [class.header-solid]="!isHomePage">
+  <div class="container">
+    <a routerLink="/" class="logo-link" aria-label="Volver al inicio">
+      <h1 class="logo">Rick and Morty</h1>
+    </a>
+    <app-nav></app-nav>
+    <div class="spacer"></div>
+  </div>
+</header>

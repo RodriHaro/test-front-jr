@@ -1,1 +1,43 @@
-<p>nav works!</p>
+<button
+  class="hamburger"
+  [class.active]="isMenuOpen"
+  (click)="toggleMenu()"
+  aria-label="Toggle navigation menu"
+  [attr.aria-expanded]="isMenuOpen"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav aria-label="Main navigation" [class.open]="isMenuOpen">
+  <ul class="nav-list">
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu()"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="/characters" routerLinkActive="active" (click)="closeMenu()">Personajes</a>
+    </li>
+    <li>
+      <a href="#contact" (click)="scrollToContact($event)">Contacto</a>
+    </li>
+  </ul>
+</nav>
+
+<div
+  class="overlay"
+  *ngIf="isMenuOpen"
+  (click)="closeMenu()"
+  (keydown.enter)="closeMenu()"
+  (keydown.escape)="closeMenu()"
+  tabindex="0"
+  role="button"
+  aria-label="Cerrar menú"
+></div>

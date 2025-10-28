@@ -1,0 +1,88 @@
+.character-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.status-badge.alive {
+  background-color: rgba(46, 204, 113, 0.9);
+  color: #ffffff;
+}
+
+.status-badge.dead {
+  background-color: rgba(231, 76, 60, 0.9);
+  color: #ffffff;
+}
+
+.status-badge.unknown {
+  background-color: rgba(149, 165, 166, 0.9);
+  color: #ffffff;
+}
+
+.card-content {
+  padding: 1.25rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2a2a2a;
+  line-height: 1.3;
+}
+
+.card-info {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #00b5cc;
+}
+
+@media (max-width: 576px) {
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
+
+  /* Imagen de fondo */
+  background-image: url('/assets/images/rick-morty-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Overlay oscuro */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: #ffffff;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 0.875rem;
+  margin: 0 0 1.5rem;
+  opacity: 0.95;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile pequeño */
+@media (max-width: 576px) {
+  .hero {
+    min-height: 80vh;
+    background-position: 60% center;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.7) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+
+  .hero-content {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  }
+
+  .hero-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 767px) {
+  .hero {
+    min-height: 85vh;
+    background-position: center center;
+  }
+
+  .hero-content {
+    padding: 2rem;
+  }
+}
+
+/* Tablet grande y Desktop */
+@media (min-width: 768px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+

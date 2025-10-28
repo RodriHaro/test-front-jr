@@ -1,1 +1,26 @@
-<p>search-bar works!</p>
+<div class="search-bar">
+  <label for="search" class="search-label">Buscar personajes</label>
+  <div class="search-input-wrapper">
+    <input
+      type="text"
+      id="search"
+      [(ngModel)]="searchTerm"
+      (keyup.enter)="onSearch()"
+      placeholder="Busca por nombre..."
+      class="search-input"
+      aria-label="Buscar personajes por nombre"
+    />
+    <button
+      type="button"
+      *ngIf="searchTerm"
+      (click)="onClear()"
+      class="clear-button"
+      aria-label="Limpiar búsqueda"
+    >
+      ✕
+    </button>
+    <button type="button" (click)="onSearch()" class="search-button" aria-label="Buscar">
+      🔍 Buscar
+    </button>
+  </div>
+</div>

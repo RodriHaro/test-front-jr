@@ -1,1 +1,8 @@
-<p>error-state works!</p>
+<div class="error-state" role="alert">
+  <span class="error-icon" aria-hidden="true">⚠️</span>
+  <h3>{{ title }}</h3>
+  <p>{{ message }}</p>
+  <button *ngIf="showRetryButton" type="button" (click)="onRetry()" class="retry-button">
+    🔄 Reintentar
+  </button>
+</div>

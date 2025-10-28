@@ -1,0 +1,79 @@
+.header {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.header-solid {
+  background-color: #1a1a1a;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #00b5cc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  flex: 1;
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:focus-visible {
+  outline: 2px solid #00b5cc;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #00b5cc;
+  font-family: 'Get Schwifty', sans-serif;
+}
+
+.spacer {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 1rem;
+  }
+
+  .spacer {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 1.75rem;
+  }
+}
