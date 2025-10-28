@@ -8,7 +8,7 @@
   overflow: hidden;
 
   /* Imagen de fondo */
-  background-image: url('/assets/images/rick-morty-bg.jpg');
+  background-image: url('/assets/images/rick-morty-bg.avif');
   background-size: cover;
   background-repeat: no-repeat;
 }
