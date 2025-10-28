@@ -68,9 +68,9 @@ nav {
   padding: 0.5rem 0;
   display: block;
   transition: color 0.3s ease;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   letter-spacing: 0.5px;
 }
 
@@ -79,7 +79,6 @@ nav {
 }
 
 .nav-list a:focus-visible {
-  outline: 2px solid #00b5cc;
   outline-offset: 4px;
   border-radius: 2px;
 }
@@ -87,16 +86,6 @@ nav {
 .nav-list a.active {
   color: #00b5cc;
   position: relative;
-}
-
-.nav-list a.active::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #00b5cc;
 }
 
 /* Overlay para cerrar el menú en mobile */
