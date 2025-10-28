@@ -1,0 +1,46 @@
+.error-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.error-state p {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 1rem 0 0;
+}
+
+.error-state h3 {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  margin: 1rem 0 0.5rem;
+}
+
+.error-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.retry-button {
+  margin-top: 1.5rem;
+  padding: 0.875rem 2rem;
+  background-color: #00b5cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retry-button:hover {
+  background-color: #008fa3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 181, 204, 0.3);
+}
+
+.retry-button:focus-visible {
+  outline: 3px solid #00b5cc;
+  outline-offset: 4px;
+}

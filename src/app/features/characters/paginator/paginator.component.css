@@ -1,0 +1,65 @@
+.paginator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+
+.paginator-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #00b5cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.paginator-button:hover:not(:disabled) {
+  background-color: #008fa3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 181, 204, 0.3);
+}
+
+.paginator-button:focus-visible {
+  outline: 3px solid #00b5cc;
+  outline-offset: 4px;
+}
+
+.paginator-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.paginator-button:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.paginator-info {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  min-width: 150px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .paginator {
+    gap: 1rem;
+  }
+
+  .paginator-button {
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .paginator-info {
+    font-size: 0.875rem;
+    min-width: 120px;
+  }
+}

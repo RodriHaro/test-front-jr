@@ -1,1 +1,25 @@
-<p>paginator works!</p>
+<nav class="paginator" aria-label="Paginación de personajes">
+  <button
+    type="button"
+    (click)="onPrevious()"
+    [disabled]="!hasPrev"
+    class="paginator-button"
+    aria-label="Página anterior"
+  >
+    ← Anterior
+  </button>
+
+  <span class="paginator-info" aria-live="polite">
+    Página {{ currentPage }} de {{ totalPages }}
+  </span>
+
+  <button
+    type="button"
+    (click)="onNext()"
+    [disabled]="!hasNext"
+    class="paginator-button"
+    aria-label="Página siguiente"
+  >
+    Siguiente →
+  </button>
+</nav>

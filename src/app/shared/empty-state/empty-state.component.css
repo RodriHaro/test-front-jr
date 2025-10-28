@@ -1,0 +1,22 @@
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.empty-state p {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 1rem 0 0;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+  margin: 1rem 0 0.5rem;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 1rem;
+}

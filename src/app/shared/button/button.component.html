@@ -1,1 +1,9 @@
-<p>button works!</p>
+@if (routerLink) {
+  <a [routerLink]="routerLink" [class]="buttonClass" [attr.aria-label]="ariaLabel"
+    >{{ text }}<ng-content
+  /></a>
+} @else {
+  <button [type]="type" [class]="buttonClass" [disabled]="disabled" [attr.aria-label]="ariaLabel">
+    {{ text }}<ng-content />
+  </button>
+}
